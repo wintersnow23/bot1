@@ -13,18 +13,16 @@ BOT_PREFIX = ("?", "!")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
-@client.command(name='8ball',
-                description="Answers a yes/no question.",
+@client.command(name='hello',
+                description="answers your greetings",
                 brief="Answers from the beyond.",
-                aliases=['eight_ball', 'eightball', '8-ball'],
+                aliases=['yo', 'hey', 'hello'],
                 pass_context=True)
-async def eight_ball(context):
+async def hello(context):
     possible_responses = [
-        'That is a resounding no',
-        'It is not looking likely',
-        'Too hard to tell',
-        'It is quite possible',
-        'Definitely',
+        'hey',
+        'nice day',
+        'good to see you',
     ]
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
