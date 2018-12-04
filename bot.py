@@ -8,7 +8,7 @@ from discord.ext.commands import Bot
 
 TOKEN = 'NTE2ODgyOTExODI0MzE0MzY4.Dt6I9A.F_bMDgeE8XxVmt0UBvduX0GlLRg'
 
-startup_extensions = ["music"]
+
 BOT_PREFIX = ("!")
 
 client = Bot(command_prefix=BOT_PREFIX)
