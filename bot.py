@@ -9,7 +9,7 @@ from discord.ext.commands import Bot
 TOKEN = 'NTE2ODgyOTExODI0MzE0MzY4.Dt6I9A.F_bMDgeE8XxVmt0UBvduX0GlLRg'
 
 startup_extensions = ["music"]
-BOT_PREFIX = ("?", "!")
+BOT_PREFIX = ("!")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -22,7 +22,7 @@ async def hello(context):
     possible_responses = [
         'hey',
         'nice day',
-        'good to see you',
+        'good to see you'
     ]
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
